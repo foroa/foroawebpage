@@ -1,0 +1,100 @@
+.webpage{
+    height: 100%;
+    width: 100%;
+
+    .page {
+        position : absolute;
+        margin-left: 280px;
+        width: 78%;
+        top:0;
+        padding-right: 5%;
+        padding-left: 5%;
+        height: 100%;
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        align-content: stretch;
+        overflow: auto;
+
+        h2 {
+            color: $color-txt-2;
+            margin-top: 3%;
+            flex-grow : 1;
+        }
+    
+        .presentationContent {
+            flex-grow : 8;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            text-align: right;
+        
+            .left-area { 
+                margin-right: 20px;
+                img {
+                    width: 150px;
+                    height: 175px;
+                    border-radius: 50%;
+                    box-shadow: 3px 1px 4px rgba(51, 51, 51, 0.26);
+                }
+            }
+    
+            .right-area {
+                padding : 20px;
+
+                * {
+                    color: $color-txt-2;
+                }
+    
+                .txt {
+                    position: relative;
+                    text-align: justify;
+                    margin-left: 10px;
+                    line-height: 25px;
+                    font-style: italic;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+        
+                .cv {
+               
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1.2rem;
+                        font-weight: $font-weight-1;
+                        
+    
+                        transition: 0.2s;
+
+                        &:hover {
+                            color: $color-back-1;
+                            letter-spacing: 1px;
+                          }  
+
+                    }
+                }
+    
+            }
+        
+        }
+
+        .scroll-bottom {
+            flex-grow : 1;
+        }
+
+    }
+      
+    
+}
+
+
+    
+    
+    
+
+    

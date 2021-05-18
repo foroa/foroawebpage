@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;1,200&display=swap');
+
+$font: 'Fira Sans', sans-serif;
+$font-weight-1 : 400;
+$font-weight-2 : 300;
+
+$color-back-1: #577cbe;
+$color-back-2:  #dce6f7;
+$color-txt-active: #fafafd;
+$color-txt-1: #d4dfeb;
+$color-txt-2: #3a3a3f; 
+$black: rgb(40, 40, 40);
+$red: rgb(167, 48, 88);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+
+  &::selection {
+    color: $color-txt-1;
+    background: $color-back-2;
+  }
+}
+
+
+body {
+  background-color: $color-back-2;
+}
+main {
+  display : flex;
+}
+
+.li {
+  list-style-type:none;
+}
