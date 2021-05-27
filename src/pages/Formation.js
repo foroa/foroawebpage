@@ -5,7 +5,7 @@ const Formation = () => (
     
     <div className="page">
 
-        <h2>Formation : Master de Compétences complémentaires en informatique - Aix-Marseille Université</h2>
+        <h2>Formation en cours 2020/2021<br></br>Master de Compétences complémentaires en informatique - Aix-Marseille Université</h2>
 
         <div className="m2cci">
 
@@ -22,8 +22,9 @@ const Formation = () => (
                 <div className="tech">
                     <h4>Technologies/Outils</h4><hr></hr>
                     <ul>
-                        <li>Visual Studio - Eclipse</li>
-                        <li>Laravel - Android Studio</li>
+                        <li>Eclipse</li>
+                        <li>Visual Studio - Android Studio</li>
+                        <li>Laravel</li>
                         <li>SQLite - phpMyAdmin</li>
                         <li>GitLab</li>
                     </ul>
@@ -31,12 +32,13 @@ const Formation = () => (
                 <div className="subjects">
                     <h4>UEs</h4><hr></hr>
                     <ul>
-                        <li>Programmation</li>
-                        <li>Bases de données</li>
-                        <li>Langgages du Web</li>
-                        <li>Développement Android</li>
-                        <li>Systèmes UNIX</li>
-                        <li>Type de données et algorithmes</li>
+                        <li>Programmation (120h) - Java, C + Eclipse, replit</li>
+                        <li>Bases de données (30h) - SQL + phpMyAdmin, Oracle </li>
+                        <li>Langages du Web (60h) - HTML, CSS, Javascript ,PHP + Laravel, Bootstrap, SQLite</li>
+                        <li>Développement Android (30h) - Java + Android Studio</li>
+                        <li>Système UNIX (30h) - bash</li>
+                        <li>Type de données et algorithmes (30h) - C + replit</li>
+                        <li>Projet industriel (120h) - voir page suivante</li>
                     </ul>
                 </div>
 

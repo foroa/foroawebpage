@@ -4,7 +4,8 @@
 
     .page {
         position : absolute;
-        margin-left: 280px;
+        //margin-left: 280px;
+        margin-left: 0px;
         width: 78%;
         top:0;
         padding-right: 5%;
@@ -50,6 +51,7 @@
                 }
     
                 .txt {
+                    font-size: 0.9rem;
                     position: relative;
                     text-align: justify;
                     margin-left: 10px;
@@ -89,8 +91,21 @@
 
     }
       
-    
 }
+
+/*@media screen and (max-width: 426px ) {
+    .webpage {
+        display : flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page {
+        //width: 100%;
+        background : white;
+    }
+}*/
+
+
 
 
     

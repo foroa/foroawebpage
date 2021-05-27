@@ -16,7 +16,7 @@ export const projectsData = [
     img2: "./assets/img/pendu.jpg",
     linkcode:"https://replit.com/@foroa/NbMystJSON#script.js",
     linkcode2:"https://replit.com/@foroa/PENDUFINAL#index.html",
-    linkcodetxt:"⇒ nombre mystère - Replit",
-    linkcodetxt2:"⇒ pendu - Replit",
+    linkcodetxt:"⇒ JOUER nombre mystère",
+    linkcodetxt2:"⇒ JOUER pendu",
   }
 ];
