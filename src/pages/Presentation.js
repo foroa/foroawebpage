@@ -15,7 +15,7 @@ const Presentation = () => (
 
                 <div className="right-area">
                     <div className="txt">
-                    Actuellement étudiante en master de compétences complémentaires en informatiques, je recherche un stage de fin d’études en développement logiciel au sein d’une entreprise dans laquelle je pourrai à la fois monter en compétences, relever des défis et apporter une valeur ajoutée de par mon profil pluridisciplinaire. 
+                    Actuellement étudiante en master de compétences complémentaires en informatique, je recherche un stage de fin d’études en développement logiciel au sein d’une entreprise dans laquelle je pourrai à la fois monter en compétences, relever des défis et apporter une valeur ajoutée de par mon profil pluridisciplinaire. 
                     </div>
                     <div className="txt">Diplômée en neurosciences, j’ai choisi de compléter ma formation de base en biologie avec d’autres disciplines afin d’avoir une connaissance plus large des sciences du cerveaux et ses méthodes d’étude, et par la même, d’affiner mon projet professionnel. Mes expériences en laboratoire de recherche m’ont permis d’acquérir rigueur, 
                     persévérance et autonomie. Également, de développer un goût pour la programmation et l’utilisation d’outils informatiques. Par ailleurs, mes années d’études post-master et mon séjour Erasmus m’ont permis de développer mon ouverture d’esprit, mon adaptabilité, mes capacités de travail en équipe et le goût de la coopération.
