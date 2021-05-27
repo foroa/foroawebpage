@@ -12,6 +12,7 @@ const Neuro = (props) => {
                     <h2>{neuro.title}</h2>
                     <h3>{neuro.lab}</h3>
                     <p>{neuro.topic}</p>
+                    <div>{neuro.tasks}</div>
                     <button classNmame="btn">
                         <a href={neuro.pdf} target="blank">{neuro.pdfname}</a>
                     </button>

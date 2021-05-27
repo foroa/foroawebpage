@@ -11,11 +11,10 @@ const Projects = (props) => {
 
         <div className="content">
 
-            <div className="left-area">
+            <div className="title-area">
                 <h3>{project.title}</h3>
-                <ul className="technologies">
-                    { project.technologies.map( (item) => <li key={item}>{item}</li> )}
-                </ul>
+                <div className="technologies">{project.technologies}</div>
+                <br></br>
                 <a href={project.linkcode} target="blank" rel="nooponer noreferer">
                      {project.linkcodetxt}
                 </a><br></br>
@@ -24,7 +23,7 @@ const Projects = (props) => {
                 </a>
             </div>
 
-            <div className="right-area">
+            <div className="img-area">
                 <div className="img-container hover">
                     <img className="img2" src={project.img2} alt={project.title}/>
                     <img className="img1" src={project.img1} alt={project.title}/>

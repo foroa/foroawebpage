@@ -42,29 +42,36 @@
            
                 * {
                     color: $color-txt-2;
-                    line-height: 25px;
+                    //line-height: 25px;
                 }
     
                 display: flex;
-                flex-direction: row;
-                align-items: top;
+                //flex-direction: row;
+                //align-items: top;
                 position: relative;
                 text-align: center;
-            
-                .lang {
-                    flex-grow : 1;
+
+                table {
+                    border-collapse: collapse;
                 }
-    
-                .tech {
-                    flex-grow : 1;
-                    margin-left: 40px;
-                    margin-right: 40px;
-    
-                }    
-    
-        
-                .subjects {
-                    flex-grow : 1;
+
+                th,td {
+                    padding: 10px;
+                    text-align: left;
+                    border-bottom: 1px solid #577cbe;
+                }
+
+                th {
+                    background-color: #577dbeab;
+                    color: $color-txt-active;
+                  }
+
+                tr:nth-child(even) {
+                    //background-color: #7292c9ab;
+                }
+
+                .bold {
+                    font-weight: bold;
                 }
             
             }
