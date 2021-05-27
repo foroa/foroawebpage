@@ -3,6 +3,7 @@ import { neuroData } from '../data/neuroData';
 
 
 const Neuro = (props) => {
+    
     const [currentProject] = useState(neuroData) 
     const neuro = currentProject[props.neuroNb]
     
