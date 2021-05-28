@@ -1,10 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useState } from "react"
+import { useState, useContext } from "react"
+import LangContext from './LangContext'
 
 const Menu = () => {
 
    const [display, setDisplay] = useState(false)
+   const contextValue = useContext(LangContext)
 
     return (
 
@@ -14,13 +16,16 @@ const Menu = () => {
             <div className="af">
                 <h3>Audrey Foro</h3>
                 <ul>
-                    <li>FR</li>
-                    <li>ENG</li>
+                    <li onClick={ ()=>{ contextValue.updateLang("français"); } }>FR</li>
+                    <li onClick={ ()=>{ contextValue.updateLang("english"); } }>ENG</li>
                 </ul>
+
             </div>
         </div>
 
-        <div className="navigation">
+        { contextValue.lang === "français" ? 
+
+        (<div className="navigation">
             <hr></hr>
             <ul><br></br>
                 <NavLink to="/" exact activeClassName="menu-active" onClick={()=>{setDisplay(false)}}>
@@ -53,10 +58,46 @@ const Menu = () => {
                 </NavLink>
             <br></br></ul>
             <hr></hr>
+        </div>)
+
+        : 
+
+        ( <div className="navigation">
+            <hr></hr>
+            <ul><br></br>
+                <NavLink to="/" exact activeClassName="menu-active" onClick={()=>{setDisplay(false)}}>
+                    <li>presentation</li>
+                </NavLink>
+
+                <li className="menu-formation" onClick={()=>{setDisplay(true)}}>computer science skills
+
+                    {display && 
+                    <ul className="menu-projets">
+                        <NavLink to="/formation" activeClassName="menu-active" >
+                            <li>training course</li>
+                        </NavLink>
+                        <NavLink to="/projetIndustriel" activeClassName="menu-active">
+                            <li>final year project</li>
+                        </NavLink>
+                        <NavLink to="/Javascript" activeClassName="menu-active">
+                            <li>javascript games</li>
+                        </NavLink>
+                    </ul>
+                    }
+                </li>
+
+                <NavLink to="/neurosciences" exact activeClassName="menu-active" onClick={()=>{setDisplay(false)}}>
+                    <li>neurosciences</li>
+                </NavLink>
+
+                <NavLink to="/contact" exact activeClassName="menu-active" onClick={()=>{setDisplay(false)}}>
+                    <li>contact me</li>
+                </NavLink>
+            <br></br></ul>
+            <hr></hr>
         </div>
-
+        ) }
         
-
         <div className="foot">
             <ul>
                 <li>
@@ -74,8 +115,8 @@ const Menu = () => {
         </div>
 
     </div>
-    )
 
+    )
 }
 
 export default Menu

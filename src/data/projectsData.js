@@ -1,11 +1,20 @@
 export const projectsData = [
   {
-    id: 1,
+    id: 0,
     title: "Création d'une application web : gestion de l'emploi du temps d'une formation",
     technologies: "Laravel, Php, SQLite, TalwindCSS, Javascript/JQuery",
     img1: "./assets/img/projetEdt1.jpg",
     img2: "./assets/img/projetEdt2.jpg",
-    linkcode:"http://www.google.com",//gitHub
+    linkcode:"",//gitHub
+    linkcodetxt:"",
+  },
+  {
+    id: 1,
+    title: "Creation of a web application: management of a training program schedule",
+    technologies: "Laravel, Php, SQLite, TalwindCSS, Javascript/JQuery",
+    img1: "./assets/img/projetEdt1.jpg",
+    img2: "./assets/img/projetEdt2.jpg",
+    linkcode:"",
     linkcodetxt:"",
   },
   {
@@ -18,5 +27,16 @@ export const projectsData = [
     linkcode2:"https://replit.com/@foroa/PENDUFINAL#index.html",
     linkcodetxt:"⇒ JOUER au nombre mystère",
     linkcodetxt2:"⇒ JOUER au pendu",
+  },
+  {
+    id: 3,
+    title: "Mystery number and Hangman",
+    technologies: "Javascript/JQuery",
+    img1: "./assets/img/nbMystere.jpg",
+    img2: "./assets/img/pendu.jpg",
+    linkcode:"https://replit.com/@foroa/NbMystJSON#script.js",
+    linkcode2:"https://replit.com/@foroa/PENDUFINAL#index.html",
+    linkcodetxt:"⇒ PLAY Mystery number",
+    linkcodetxt2:"⇒ PLAY Hangman",
   }
 ];

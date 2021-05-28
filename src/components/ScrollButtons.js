@@ -1,7 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useContext } from "react"
+import LangContext from '../LangContext'
 
-const ScrollButtons = (props) => (
+const ScrollButtons = (props) => {
+
+    const contextValue = useContext(LangContext)
+
+    return (
 
     <div className="scroll-bottom">
         <div className="sb-main">
@@ -12,7 +18,8 @@ const ScrollButtons = (props) => (
                 </NavLink>
             ) }
             </div>
-            <p className="center">Naviguer</p>
+            { contextValue.lang === "français" ? 
+                (<p className="center">Naviguer</p>) : (<p className="center">Scroll</p>) }
             <div>
                 { props.right && (
                 <NavLink to={props.right}>
@@ -23,6 +30,6 @@ const ScrollButtons = (props) => (
         </div>
     </div>
     
-)
+    ) }
 
 export default ScrollButtons

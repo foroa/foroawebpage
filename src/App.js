@@ -7,8 +7,22 @@ import Neurosciences from './pages/Neuro'
 import Contact from './pages/Contact'
 import Menu from './Menu'
 
+import { useState } from "react"
+import LangContext from "./LangContext" 
+
+
 function App() {
+
+  //const LangContext = React.createContext('french');
+  const [lang, setLang] = useState("français")
+
+  const contextValue = {
+    lang: lang, // on peut noter uniquement lang
+    updateLang: setLang
+  }
+
   return (
+    <LangContext.Provider value={contextValue}>
     <main>
         <div className="webpage">
             <Menu/>
@@ -23,6 +37,7 @@ function App() {
             </Switch>
         </div>
     </main>
+    </LangContext.Provider>
   );
 }
 

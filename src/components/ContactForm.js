@@ -1,8 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { useContext } from "react"
+import LangContext from '../LangContext'
 
 const ContactForm = () => {
+
   const [lastname, setLastname] = useState("");
   const [firstname, setFirstname] = useState("");
   const [phone, setPhone] = useState("");
@@ -40,7 +43,10 @@ const ContactForm = () => {
       emailS.classList.remove("red");
       messageS.classList.remove("red");
 
-      formMess.innerHTML = "Message en cours d'envoi...";
+      if(contextValue.lang === "français")
+        formMess.innerHTML = "Message en cours d'envoi...";
+      else
+        formMess.innerHTML = "Message being sent ...";
       formMess.style.background = "#00c1ec";
       formMess.style.opacity = "1";
 
@@ -63,8 +69,13 @@ const ContactForm = () => {
         )
         .then(
           () => {
+
+            if(contextValue.lang === "français")
             formMess.innerHTML =
               "Message envoyé ! Je vous recontacterai dès que possible.";
+            else
+            formMess.innerHTML =
+              "Message sent ! I will get back to you as soon as possible.";
 
             document.getElementById("lastname").classList.remove("error");
             document.getElementById("firstname").classList.remove("error");
@@ -84,12 +95,19 @@ const ContactForm = () => {
           (err) => {
             console.log(err);
             formMess.style.background = "rgb(253, 87, 87)";
+            if(contextValue.lang === "français")
             formMess.innerHTML =
               "Une erreur s'est produite, veuillez réessayer.";
+            else
+            formMess.innerHTML =
+              "An error has occurred. Please try again.";
           }
         );
     } else {
-      formMess.innerHTML = "Merci de remplir correctement les champs requis *";
+      if(contextValue.lang === "français")
+        formMess.innerHTML = "Merci de remplir correctement les champs requis *";
+      else
+        formMess.innerHTML = "Please fill in the required fields correctly *";
       formMess.style.background = "rgb(253, 87, 87)";
       formMess.style.opacity = "1";
 
@@ -108,10 +126,14 @@ const ContactForm = () => {
     }
   };
 
+  const contextValue = useContext(LangContext)
+
   return (
+
     <form className="contact-form">
-      
-      <div className="form-content">
+
+      { contextValue.lang === "français" ? 
+      (<div className="form-content">
         <input
           type="text"
           id="lastname"
@@ -160,15 +182,79 @@ const ContactForm = () => {
           value={message}
           required
         />
-      </div>
-      <input
+      </div>)
+      :
+      (<div className="form-content">
+        <input
+          type="text"
+          id="firstname"
+          name="firstname"
+          required
+          onChange={(e) => setFirstname(e.target.value)}
+          placeholder="firstname *"
+          value={firstname}
+        />
+        <input
+          type="text"
+          id="lastname"
+          name="lastname"
+          required
+          onChange={(e) => setLastname(e.target.value)}
+          placeholder="lastname *"
+          value={lastname}
+        />
+        <div className="phone-content">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            onChange={(e) => setPhone(e.target.value)}
+            placeholder="phone"
+            value={phone}
+          />
+        </div>
+        <div className="email-content">
+          <label id="not-mail">Invalid email</label>
+          <input
+            type="mail"
+            id="email"
+            name="email"
+            required
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="email *"
+            value={email}
+          />
+        </div>
+        <textarea
+          id="message"
+          name="message"
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="message *"
+          value={message}
+          required
+        />
+      </div>) }
+
+      { contextValue.lang === "français" ? 
+      (<input
         className="button"
         type="submit"
         value="envoyer"
         onClick={(e) => handleSubmit(e)}
-      />
+      />)
+      :
+      (<input
+        className="button"
+        type="submit"
+        value="send"
+        onClick={(e) => handleSubmit(e)}
+      />) }
       <div className="formMessage"></div>
+
     </form>
+    
+    
+
   );
 };
 

@@ -1,13 +1,23 @@
 import React from 'react'
 import ScrollButtons from '../components/ScrollButtons'
+import { useContext } from "react"
+import LangContext from '../LangContext'
 
-const Presentation = () => (
+
+const Presentation = () => {
+
+    const contextValue = useContext(LangContext)
+
+    return (
     
-    <div className="page">
+    <div>
 
+    { contextValue.lang === "français" ?
+    (<div className="page">
+        
         <h2>Présentation</h2>
 
-            <div className="presentationContent">
+        <div className="presentationContent">
 
                 <div className="left-area">
                     <img src="./img/profileAF.jpg" alt="profile-pic"/>
@@ -29,12 +39,50 @@ const Presentation = () => (
                     </div>
                 </div>
 
-            </div>
+        </div>
+        
+        <ScrollButtons right={"/formation"}/>
 
-            <ScrollButtons right={"/formation"}/>
+    </div>)
+
+    :
+
+    (<div className="page">
+
+        
+        <h2>Introduction</h2>
+
+        <div className="presentationContent">
+
+                <div className="left-area">
+                    <img src="./img/profileAF.jpg" alt="profile-pic"/>
+                </div>
+
+                <div className="right-area">
+                    <div className="txt">
+                    Student in a master of complementary skills in computer science, I am currently looking for an internship in software development. I aspire to gain new skills, meet new challenges and adding value to a company with my interdisciplinary profile.  
+                    </div>
+                    <div className="txt">Following graduation in neurosciences, I chose to enrich my background in biology with other disciplines in order to broaden my knowledge of brain science and its methods of study. My professional project got fined-tuned in the process. Besides, I gained discipline, perseverance, autonomy and a keen IT interest from internships in research labs. Furthermore, my post-master experiences and Erasmus exchange brought me a more open mindset, adaptability and teamwork skills. 
+                    </div>
+                    <div className="txt">
+                    Nowadays, I want to pursue professionally in the computer science field in order to invest in projects in back and front development.
+                    </div>
+                    <div className="cv">
+                        <a href="./doc/CV_AudreyForo_ENG_detailed_internship.pdf" target="blank" className="hover">CV in english</a>
+                        <a href="./doc/CV_AudreyForo_FR_detaille_stage.pdf" target="blank" className="hover">CV en français</a>
+                    </div>
+                </div>
+
+        </div>
+        
+        <ScrollButtons right={"/formation"}/>
+
+    </div> ) }
 
     </div>
 
-)
+    )
+}
+
 
 export default Presentation 
