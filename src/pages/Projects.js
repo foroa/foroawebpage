@@ -57,15 +57,37 @@ export const ProjetJavascript = () => {
     (<div className="page">
         <h2>Jeux javascript</h2>
         <Projects projectNb={2}/>
-        <ScrollButtons left = {"/projetIndustriel"} right={"/neurosciences"}/>
+        <ScrollButtons left = {"/projetIndustriel"} right={"/ucdj"}/>
     </div>)
     :
     (<div className="page">s
         <h2>Javascript game</h2>
         <Projects projectNb={3}/>
-        <ScrollButtons left = {"/projetIndustriel"} right={"/neurosciences"}/>
+        <ScrollButtons left = {"/projetIndustriel"} right={"/ucdj"}/>
     </div>) }
 
     </div>
 
+) }
+
+export const ProjetUCDJ = () => {
+
+    const contextValue = useContext(LangContext)
+
+    return(
+    <div>
+    { contextValue.lang === "français" ? 
+    (<div className="page">
+        {/* <h2></h2> */}
+        <Projects projectNb={4}/>
+        <ScrollButtons left = {"/Javascript"} right={"/neurosciences"}/>
+    </div>)
+    :
+    (<div className="page">
+        {/* <h2></h2> */}
+        <Projects projectNb={5}/>
+        <ScrollButtons left = {"/Javascript"} right={"/neurosciences"}/>
+    </div>) }
+
+    </div>
 ) }

@@ -38,5 +38,23 @@ export const projectsData = [
     linkcode2:"https://replit.com/@foroa/PENDUFINAL#index.html",
     linkcodetxt:"⇒ PLAY Mystery number",
     linkcodetxt2:"⇒ PLAY Hangman",
+  },
+  {
+    id: 4,
+    title: "Site vitrine pour la Maison de Lingerie Un Cri de Joie",
+    technologies: "ReactJS",
+    img1: "./assets/img/ucdj1.PNG",
+    img2: "./assets/img/ucdj2.PNG",
+    linkcode:"https://uncridejoie.com/",
+    linkcodetxt:"lien vers le site",
+  },
+  {
+    id: 5,
+    title: "Showcase website for the brand Un Cri de Joie",
+    technologies: "ReactJS",
+    img1: "./assets/img/ucdj1.PNG",
+    img2: "./assets/img/ucdj2.PNG",
+    linkcode:"https://uncridejoie.com/",
+    linkcodetxt:"",
   }
 ];
