@@ -85,6 +85,9 @@ const Menu = () => {
                         <NavLink to="/Javascript" activeClassName="menu-active">
                             <li>javascript games</li>
                         </NavLink>
+                        <NavLink to="/ucdj" activeClassName="menu-active">
+                            <li>Showcase website</li>
+                        </NavLink>
                     </ul>
                     }
                 </li>

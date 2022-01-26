@@ -78,13 +78,13 @@ export const ProjetUCDJ = () => {
     <div>
     { contextValue.lang === "français" ? 
     (<div className="page">
-        {/* <h2></h2> */}
+        <h2>Projet FRONT</h2>
         <Projects projectNb={4}/>
         <ScrollButtons left = {"/Javascript"} right={"/neurosciences"}/>
     </div>)
     :
     (<div className="page">
-        {/* <h2></h2> */}
+        <h2>Projet FRONT</h2>
         <Projects projectNb={5}/>
         <ScrollButtons left = {"/Javascript"} right={"/neurosciences"}/>
     </div>) }
