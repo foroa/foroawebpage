@@ -24,7 +24,7 @@ export const ProjetIndustriel = () => {
                 <li>&#9642; plusieurs pages dédiées à la consultation des informations relatives aux unités d'enseignement, étudiants, enseignants et filières.</li>
             </ul>
         </div>
-        <ScrollButtons left = {"/formation"} right={"/Javascript"}/>
+        <ScrollButtons left = {"/formation"} right={"/stage"}/>
     </div>)
     :
     (<div className="page">
@@ -40,7 +40,7 @@ export const ProjetIndustriel = () => {
                 <li>&#9642; several pages for consulting informations related to teaching units, students, teachers and courses.</li>
             </ul>
         </div>
-        <ScrollButtons left = {"/formation"} right={"/Javascript"}/>
+        <ScrollButtons left = {"/formation"} right={"/stage"}/>
     </div>) }
 
     </div>
@@ -57,13 +57,29 @@ export const ProjetJavascript = () => {
     (<div className="page">
         <h2>Jeux javascript</h2>
         <Projects projectNb={2}/>
-        <ScrollButtons left = {"/projetIndustriel"} right={"/ucdj"}/>
+        <div className="features">
+            <h4>Missions dans un environnement Agile:</h4>
+            <ul>
+                <li>&#9642; Analyse des exigences et définition des User Stories</li>
+                <li>&#9642; Développement et test des User stories</li>
+                <li>&#9642; Rédaction de la documentation technique</li>
+            </ul>
+        </div>
+        <ScrollButtons left = {"/projetBD"} right={"/neurosciences"}/>
     </div>)
     :
     (<div className="page">s
         <h2>Javascript game</h2>
         <Projects projectNb={3}/>
-        <ScrollButtons left = {"/projetIndustriel"} right={"/ucdj"}/>
+        <div className="features">
+            <h4>Tasks in Agile environment:</h4>
+            <ul>
+                <li>&#9642; Analysis of requirements and users story definition</li>
+                <li>&#9642; User stories development and testing</li>
+                <li>&#9642; Technical documentation writing</li>
+            </ul>
+        </div>
+        <ScrollButtons left = {"/projetBD"} right={"/neurosciences"}/>
     </div>) }
 
     </div>
@@ -80,13 +96,57 @@ export const ProjetUCDJ = () => {
     (<div className="page">
         <h2>Projet FRONT</h2>
         <Projects projectNb={4}/>
-        <ScrollButtons left = {"/Javascript"} right={"/neurosciences"}/>
+        <ScrollButtons left = {"/stage"} right={"/projetBD"}/>
     </div>)
     :
     (<div className="page">
-        <h2>Projet FRONT</h2>
+        <h2>FRONT Project</h2>
         <Projects projectNb={5}/>
-        <ScrollButtons left = {"/Javascript"} right={"/neurosciences"}/>
+        <ScrollButtons left = {"/stage"} right={"/projetBD"}/>
+    </div>) }
+
+    </div>
+) }
+
+export const Stage = () => {
+
+    const contextValue = useContext(LangContext)
+
+    return(
+    <div>
+    { contextValue.lang === "français" ? 
+    (<div className="page">
+        <h2>Stage de fin d'étude</h2>
+        <Projects projectNb={6}/>
+        <ScrollButtons left = {"/projetIndustriel"} right={"/projetUCDJ"}/>
+    </div>)
+    :
+    (<div className="page">
+        <h2>End of studies internship</h2>
+        <Projects projectNb={7}/>
+        <ScrollButtons left = {"/projetIndustriel"} right={"/projetUCDJ"}/>
+    </div>) }
+
+    </div>
+) }
+
+export const ProjetBD = () => {
+
+    const contextValue = useContext(LangContext)
+
+    return(
+    <div>
+    { contextValue.lang === "français" ? 
+    (<div className="page">
+        <h2>Projet scolaire de Base de données</h2>
+        <Projects projectNb={8}/>
+        <ScrollButtons left = {"/ucdj"} right={"/Javascript"}/>
+    </div>)
+    :
+    (<div className="page">
+        <h2>Database school project</h2>
+        <Projects projectNb={9}/>
+        <ScrollButtons left = {"/ucdj"} right={"/Javascript"}/>
     </div>) }
 
     </div>

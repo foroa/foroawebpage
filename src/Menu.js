@@ -42,11 +42,17 @@ const Menu = () => {
                         <NavLink to="/projetIndustriel" activeClassName="menu-active">
                             <li>projet de fin d'année</li>
                         </NavLink>
-                        <NavLink to="/Javascript" activeClassName="menu-active">
-                            <li>jeux javascript</li>
+                        <NavLink to="/stage" activeClassName="menu-active">
+                            <li>stage en développement logiciel</li>
                         </NavLink>
                         <NavLink to="/ucdj" activeClassName="menu-active">
                             <li>site vitrine</li>
+                        </NavLink>
+                        <NavLink to="/projetBD" activeClassName="menu-active">
+                            <li>projet scolaire Base de données</li>
+                        </NavLink>
+                        <NavLink to="/Javascript" activeClassName="menu-active">
+                            <li>jeux javascript</li>
                         </NavLink>
                     </ul>
                     }
@@ -82,12 +88,18 @@ const Menu = () => {
                         <NavLink to="/projetIndustriel" activeClassName="menu-active">
                             <li>final year project</li>
                         </NavLink>
-                        <NavLink to="/Javascript" activeClassName="menu-active">
-                            <li>javascript games</li>
+                        <NavLink to="/stage" activeClassName="menu-active">
+                            <li>software development internship</li>
                         </NavLink>
                         <NavLink to="/ucdj" activeClassName="menu-active">
-                            <li>Showcase website</li>
+                            <li>showcase website</li>
                         </NavLink>
+                        <NavLink to="/projetBD" activeClassName="menu-active">
+                            <li>Database school project</li>
+                        </NavLink> 
+                        <NavLink to="/Javascript" activeClassName="menu-active">
+                            <li>javascript games</li>
+                        </NavLink> 
                     </ul>
                     }
                 </li>
