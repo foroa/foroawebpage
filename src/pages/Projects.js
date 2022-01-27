@@ -110,7 +110,7 @@ export const Stage = () => {
                 <li>&#9642; Rédaction de la documentation technique</li>
             </ul>
         </div>
-        <ScrollButtons left = {"/projetIndustriel"} right={"/projetUCDJ"}/>
+        <ScrollButtons left = {"/projetIndustriel"} right={"/ucdj"}/>
     </div>)
     :
     (<div className="page">
@@ -124,7 +124,7 @@ export const Stage = () => {
                 <li>&#9642; Technical documentation writing</li>
             </ul>
         </div>
-        <ScrollButtons left = {"/projetIndustriel"} right={"/projetUCDJ"}/>
+        <ScrollButtons left = {"/projetIndustriel"} right={"/ucdj"}/>
     </div>) }
 
     </div>
