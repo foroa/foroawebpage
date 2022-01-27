@@ -57,28 +57,12 @@ export const ProjetJavascript = () => {
     (<div className="page">
         <h2>Jeux javascript</h2>
         <Projects projectNb={2}/>
-        <div className="features">
-            <h4>Missions dans un environnement Agile:</h4>
-            <ul>
-                <li>&#9642; Analyse des exigences et définition des User Stories</li>
-                <li>&#9642; Développement et test des User stories</li>
-                <li>&#9642; Rédaction de la documentation technique</li>
-            </ul>
-        </div>
         <ScrollButtons left = {"/projetBD"} right={"/neurosciences"}/>
     </div>)
     :
     (<div className="page">s
         <h2>Javascript game</h2>
         <Projects projectNb={3}/>
-        <div className="features">
-            <h4>Tasks in Agile environment:</h4>
-            <ul>
-                <li>&#9642; Analysis of requirements and users story definition</li>
-                <li>&#9642; User stories development and testing</li>
-                <li>&#9642; Technical documentation writing</li>
-            </ul>
-        </div>
         <ScrollButtons left = {"/projetBD"} right={"/neurosciences"}/>
     </div>) }
 
@@ -118,12 +102,28 @@ export const Stage = () => {
     (<div className="page">
         <h2>Stage de fin d'étude</h2>
         <Projects projectNb={6}/>
+        <div className="features">
+            <h4>Missions dans un environnement Agile:</h4>
+            <ul>
+                <li>&#9642; Analyse des exigences et définition des User Stories</li>
+                <li>&#9642; Développement et test des User stories</li>
+                <li>&#9642; Rédaction de la documentation technique</li>
+            </ul>
+        </div>
         <ScrollButtons left = {"/projetIndustriel"} right={"/projetUCDJ"}/>
     </div>)
     :
     (<div className="page">
         <h2>End of studies internship</h2>
         <Projects projectNb={7}/>
+        <div className="features">
+            <h4>Tasks in Agile environment:</h4>
+            <ul>
+                <li>&#9642; Analysis of requirements and users story definition</li>
+                <li>&#9642; User stories development and testing</li>
+                <li>&#9642; Technical documentation writing</li>
+            </ul>
+        </div>
         <ScrollButtons left = {"/projetIndustriel"} right={"/projetUCDJ"}/>
     </div>) }
 
