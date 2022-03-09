@@ -33,8 +33,8 @@ const Presentation = () => {
                     Aujourd’hui, je souhaite poursuivre professionnellement dans l’informatique afin de m’investir sur des projets industriels et/ou R&amp;D, en développement back et front.  
                     </div> */}
                     <div className="cv">
-                        <a href="./doc/CV_AudreyForo_Dev_2022_longversion_FR.pdf" target="blank" className="hover">CV en français</a>
-                        <a href="./doc/CV_AudreyForo_Dev_2022_longversion_ENG.pdf" target="blank" className="hover">CV in english</a>
+                        <a href="./doc/CV_AudreyForo_Dev_2022_website_FR.pdf" target="blank" className="hover">CV en français</a>
+                        <a href="./doc/CV_AudreyForo_Dev_2022_website_ENG.pdf" target="blank" className="hover">CV in english</a>
                     </div>
                 </div>
 
@@ -67,8 +67,8 @@ const Presentation = () => {
                     Nowadays, I want to pursue professionally in the computer science field in order to invest in projects in back and front development.
                     </div> */}
                     <div className="cv">
-                        <a href="./doc/CV_AudreyForo_Dev_2022_longversion_ENG.pdf" target="blank" className="hover">CV in english</a>
-                        <a href="./doc/CV_AudreyForo_Dev_2022_longversion_FR.pdf" target="blank" className="hover">CV en français</a>
+                        <a href="./doc/CV_AudreyForo_Dev_2022_website_ENG.pdf" target="blank" className="hover">CV in english</a>
+                        <a href="./doc/CV_AudreyForo_Dev_2022_website_FR.pdf" target="blank" className="hover">CV en français</a>
                     </div>
                 </div>
 
