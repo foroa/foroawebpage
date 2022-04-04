@@ -77,7 +77,7 @@ export const projectsData = [
   },
   {
     id: 6,
-    title: "Création d'une base de données pour gérer une biblipothèque (méthode MERISE)",
+    title: "Création d'une base de données pour gérer une bibliothèque (méthode MERISE)",
     technologies: "SQL",
     img1: "./assets/img/BD1.PNG",
     img2: "./assets/img/BD2.PNG",
