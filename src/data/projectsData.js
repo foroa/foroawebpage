@@ -45,7 +45,7 @@ export const projectsData = [
     technologies: "ReactJS",
     img1: "./assets/img/ucdj1.PNG",
     img2: "./assets/img/ucdj2.PNG",
-    linkcode:"https://uncridejoie.com/",
+    linkcode:"https://uncridejoie.fr/",
     linkcodetxt:"LIEN VERS LE SITE",
   },
   {
@@ -54,7 +54,7 @@ export const projectsData = [
     technologies: "ReactJS",
     img1: "./assets/img/ucdj1.PNG",
     img2: "./assets/img/ucdj2.PNG",
-    linkcode:"https://uncridejoie.com/",
+    linkcode:"https://uncridejoie.fr/",
     linkcodetxt:"WEBSITE LINK",
   },
   {
